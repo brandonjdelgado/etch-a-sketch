@@ -24,12 +24,12 @@ createGrid();
 // clearButton.addEventListener('click', () => [
 // ])
 
-// const gridButton = document.querySelector('#gridButton');
-// gridButton.addEventListener('click', () => {
-//   const grid = prompt('Enter number from 1-100', 16);
-//   if (grid !== null) {
-//     container.innerHTML = '';
-//     createGrid(grid);
-//   }
-//   return;
-// })
+const gridButton = document.querySelector('#gridButton');
+gridButton.addEventListener('click', () => {
+  const grid = prompt('Enter number from 1-100', 16);
+  if (grid !== null) {
+    container.innerHTML = '';
+    createGrid(grid);
+  }
+  return;
+})
