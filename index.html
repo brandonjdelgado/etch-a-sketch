@@ -13,14 +13,27 @@
 
     <div class="container"></div>
     <div class="buttons-container">
-      <button id="clearButton">Clear</button>
-      <button id="gridButton">Change Grid Size</button>
-      <button id="backgrounColorButton">Background Color</button>
-      <button id="penColorButton">Pen Color</button>
-      <button id="rainbowModeButton">Rainbow Mode</button>
-      <button id="shadowModeButton">Shadow Mode</button>
-      <button id="eraserButton">Eraser</button>
-      <button id="toggleGridLinesButton">Toggle Grid Lines</button>
+      <div class="top-row">
+        <div>
+          <input id="bgColor" type="color" value="#FFFFFF" />
+          <p>Background Color</p>
+        </div>
+        <div>
+          <input id="penColor" type="color" value="#000000" />
+          <p>Pen Color</p>
+        </div>
+        <div>
+          <p id="gridSize"></p>
+          <input id="gridSizeInput" type="range" min="1" max="100" value="16" />
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <button id="penModeButton">Pen Mode</button>
+        <button id="rainbowModeButton">Rainbow Mode</button>
+        <button id="shadowModeButton">Shadow Mode</button>
+        <button id="clearButton">Clear</button>
+      </div>
     </div>
   </body>
 </html>
